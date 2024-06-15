@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 100vh;
 }
 
 .container {
@@ -60,10 +61,6 @@ h1 {
   color: hsl(300, 43%, 22%);
 }
 
-h1 {
-  font-weight: 1000000;
-}
-
 h3 {
   color: hsl(333, 80%, 67%);
   font-size: 15px;
@@ -81,7 +78,7 @@ h3 {
 .profile-copy {
   display: flex;
   flex-direction: column;
-  line-height: 0px;
+  line-height: 18px;
 }
 
 .profile img {
@@ -93,4 +90,82 @@ h3 {
 h2 {
   font-size: 14px;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 540px) {
+  .top-section {
+    display: flex;
+  }
+
+  .profile-section {
+    display: flex;
+  }
+
+  .container {
+    max-width: 900px;
+    max-height: 500px;
+  }
+
+  .top-text {
+    width: 30%;
+    margin-right: 100px;
+  }
+
+  .rating-one,
+  .rating-two,
+  .rating-three {
+    max-width: 445px;
+    height: 56px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rating-two {
+    margin-left: 50px;
+  }
+
+  .rating-three {
+    margin-left: 100px;
+  }
+
+  .rating-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rating-content img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .stars {
+    margin-right: 15px;
+  }
+
+  .profile-section {
+    margin-top: 50px;
+  }
+
+  .profile-one {
+    margin-right: 30px;
+  }
+
+  .profile-two {
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+
+  .profile-three {
+    margin-right: 0px;
+    margin-top: 40px;
+  }
+
+  .profile-one,
+  .profile-two,
+  .profile-three {
+    height: 234px;
+  }
 }
